@@ -1,0 +1,5 @@
+class AppFontFamily {
+  AppFontFamily._();
+
+
+}
