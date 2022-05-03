@@ -50,201 +50,11 @@ class Translations {
     return Localizations.of<Translations>(context, Translations);
   }
 
-  /// `language`
-  String get language {
+  /// `=============== Start Error Strings ==================`
+  String get start_error_strings {
     return Intl.message(
-      'language',
-      name: 'language',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `languages`
-  String get languages {
-    return Intl.message(
-      'languages',
-      name: 'languages',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Change Language`
-  String get changeLanguage {
-    return Intl.message(
-      'Change Language',
-      name: 'changeLanguage',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Cancel`
-  String get cancel {
-    return Intl.message(
-      'Cancel',
-      name: 'cancel',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Confirm`
-  String get confirm {
-    return Intl.message(
-      'Confirm',
-      name: 'confirm',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Tap again to exit!`
-  String get tapAgainToExit {
-    return Intl.message(
-      'Tap again to exit!',
-      name: 'tapAgainToExit',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Tasks`
-  String get tasks {
-    return Intl.message(
-      'Tasks',
-      name: 'tasks',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Crops`
-  String get crops {
-    return Intl.message(
-      'Crops',
-      name: 'crops',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Crop Balance`
-  String get cropBalance {
-    return Intl.message(
-      'Crop Balance',
-      name: 'cropBalance',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Basket Balance`
-  String get basketBalance {
-    return Intl.message(
-      'Basket Balance',
-      name: 'basketBalance',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Squeeze into VIMP`
-  String get squeezeIntoVIMP {
-    return Intl.message(
-      'Squeeze into VIMP',
-      name: 'squeezeIntoVIMP',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Earn`
-  String get earn {
-    return Intl.message(
-      'Earn',
-      name: 'earn',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Available Rewards`
-  String get availableRewards {
-    return Intl.message(
-      'Available Rewards',
-      name: 'availableRewards',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Participate`
-  String get participate {
-    return Intl.message(
-      'Participate',
-      name: 'participate',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Farmers`
-  String get farmers {
-    return Intl.message(
-      'Farmers',
-      name: 'farmers',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `By`
-  String get by {
-    return Intl.message(
-      'By',
-      name: 'by',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Latest Tasks`
-  String get latestTasks {
-    return Intl.message(
-      'Latest Tasks',
-      name: 'latestTasks',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Explore Farms`
-  String get exploreFarms {
-    return Intl.message(
-      'Explore Farms',
-      name: 'exploreFarms',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `My Farms`
-  String get myFarms {
-    return Intl.message(
-      'My Farms',
-      name: 'myFarms',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Scan to Login`
-  String get qrDialogTxt {
-    return Intl.message(
-      'Scan to Login',
-      name: 'qrDialogTxt',
+      '=============== Start Error Strings ==================',
+      name: 'start_error_strings',
       desc: '',
       args: [],
     );
@@ -280,10 +90,10 @@ class Translations {
     );
   }
 
-  /// `unKnown error`
+  /// `UnKnown error`
   String get unknown_error {
     return Intl.message(
-      'unKnown error',
+      'UnKnown error',
       name: 'unknown_error',
       desc: '',
       args: [],
@@ -380,21 +190,161 @@ class Translations {
     );
   }
 
-  /// `Select passport to continue.`
-  String get selectPassportToContinue {
+  /// `========================================================`
+  String get end_error_strings {
     return Intl.message(
-      'Select passport to continue.',
-      name: 'selectPassportToContinue',
+      '========================================================',
+      name: 'end_error_strings',
       desc: '',
       args: [],
     );
   }
 
-  /// `Continue`
-  String get continueStr {
+  /// `Language`
+  String get language {
     return Intl.message(
-      'Continue',
-      name: 'continueStr',
+      'Language',
+      name: 'language',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Languages`
+  String get languages {
+    return Intl.message(
+      'Languages',
+      name: 'languages',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Change Language`
+  String get changeLanguage {
+    return Intl.message(
+      'Change Language',
+      name: 'changeLanguage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cancel`
+  String get cancel {
+    return Intl.message(
+      'Cancel',
+      name: 'cancel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Confirm`
+  String get confirm {
+    return Intl.message(
+      'Confirm',
+      name: 'confirm',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tap again to exit!`
+  String get tapAgainToExit {
+    return Intl.message(
+      'Tap again to exit!',
+      name: 'tapAgainToExit',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `By`
+  String get by {
+    return Intl.message(
+      'By',
+      name: 'by',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Start`
+  String get start {
+    return Intl.message(
+      'Start',
+      name: 'start',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Links`
+  String get links {
+    return Intl.message(
+      'Links',
+      name: 'links',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Done`
+  String get done {
+    return Intl.message(
+      'Done',
+      name: 'done',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Processing`
+  String get processing {
+    return Intl.message(
+      'Processing',
+      name: 'processing',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Unknown Size`
+  String get unknownSize {
+    return Intl.message(
+      'Unknown Size',
+      name: 'unknownSize',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Size`
+  String get size {
+    return Intl.message(
+      'Size',
+      name: 'size',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Error`
+  String get error {
+    return Intl.message(
+      'Error',
+      name: 'error',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Reset`
+  String get reset {
+    return Intl.message(
+      'Reset',
+      name: 'reset',
       desc: '',
       args: [],
     );

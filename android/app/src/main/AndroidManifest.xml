@@ -1,8 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.urbanminded_assessment">
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="urbanminded_assessment"
         android:name="${applicationName}"
+       android:usesCleartextTraffic="true"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

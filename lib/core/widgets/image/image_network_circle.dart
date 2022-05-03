@@ -78,15 +78,20 @@ class _ImageNetworkCircleWidgetState extends State<ImageNetworkCircleWidget>
             child: CachedNetworkImage(
               imageUrl: widget.imageUrl??"",
               placeholder: (context, url) =>
-              Container(
-                  color: widget.imagePlaceHolderBackgroundColor,
-                  child: const SpinKitPulse(color: AppColors.primaryColor,size: 25.0,)),
-              errorWidget: (context, url, error) => const Icon(Icons.error),
+              placeholderWidget(),
+              errorWidget: (context, url, error) => errorWidget(),
               height: widget.imageHeight,
               width: widget.imageWidth,
               fit: widget.boxFit,
             )));
   }
+
+  placeholderWidget ()=> Container(
+      color: widget.imagePlaceHolderBackgroundColor,
+      child: const Icon(Icons.question_mark,size: 35.0,));
+  errorWidget ()=> Container(
+      color: widget.imagePlaceHolderBackgroundColor,
+      child: const Icon(Icons.question_mark,size: 35.0,));
 
   @override
   bool get wantKeepAlive => true;

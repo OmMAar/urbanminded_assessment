@@ -1,26 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:urbanminded_assessment/core/constants/constants.dart';
 
-
-class RoundedButtonWidget extends StatelessWidget {
+class RoundedWidget extends StatelessWidget {
 
   final Color backgroundColor;
   final Color? borderColor;
   final double? width;
   final double? height;
   final double borderRadius;
-
-  final Function() onPressed;
   final Widget child;
-  final bool disable;
 
-  const RoundedButtonWidget({
+  const RoundedWidget({
     Key? key,
 
     required this.backgroundColor,
-     this.width,
-    required this.onPressed,
-    this.disable = false,
+    this.width,
     required this.child,
     this.height,
     this.borderRadius = 0.0,
@@ -34,18 +28,15 @@ class RoundedButtonWidget extends StatelessWidget {
       width: width,
       height: height ?? 45,
       decoration: BoxDecoration(
-          color: disable ? AppColors.darkGrey : backgroundColor,
+          color: backgroundColor,
           borderRadius: BorderRadius.all(Radius.circular(borderRadius)),
           border: Border.all(
             width: 1.0,
             color:borderColor ?? AppColors.transparent,
           )
       ),
-      child: InkWell(
-        onTap: disable ? null :onPressed,
-        child: Center(
-          child: child,
-        ),
+      child: Center(
+        child: child,
       ),
     );
   }

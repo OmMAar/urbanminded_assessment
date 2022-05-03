@@ -93,6 +93,8 @@ dependencies:
   # Flutter plugin providing detailed information about the device (make, model, etc.),
   # and Android or iOS version the app is running on.
   device_info_plus: ^3.2.3
+  # RFC4122 (v1, v4, v5) UUID Generator and Parser for all Dart platforms (Web, VM, Flutter)
+  uuid: ^3.0.6
 
 
 
@@ -111,6 +113,9 @@ dependencies:
   #  ============= UI Helper ==================
   # A package provides an easy way to add shimmer effect in Flutter project
   shimmer: ^2.0.0
+
+  # A Flutter implementation of slidable list item with directional slide actions that can be dismissed.
+  flutter_slidable: ^1.2.0
 
 
   # Customizable animated page indicator with a set of built-in effects.

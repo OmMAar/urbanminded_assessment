@@ -22,9 +22,6 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "availableRewards":
-            MessageLookupByLibrary.simpleMessage("Available Rewards"),
-        "basketBalance": MessageLookupByLibrary.simpleMessage("Basket Balance"),
         "by": MessageLookupByLibrary.simpleMessage("By"),
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "changeLanguage":
@@ -32,9 +29,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
         "connection_error":
             MessageLookupByLibrary.simpleMessage("Connection Error"),
-        "continueStr": MessageLookupByLibrary.simpleMessage("Continue"),
-        "cropBalance": MessageLookupByLibrary.simpleMessage("Crop Balance"),
-        "crops": MessageLookupByLibrary.simpleMessage("Crops"),
         "dio_bad_request_error":
             MessageLookupByLibrary.simpleMessage("Bad Request!"),
         "dio_cancel_error": MessageLookupByLibrary.simpleMessage(
@@ -48,32 +42,32 @@ class MessageLookup extends MessageLookupByLibrary {
                 "Receive timeout in connection with API server"),
         "dio_send_timeout_to_the_server": MessageLookupByLibrary.simpleMessage(
             "Send timeout in connection with API server"),
-        "earn": MessageLookupByLibrary.simpleMessage("Earn"),
+        "done": MessageLookupByLibrary.simpleMessage("Done"),
+        "end_error_strings": MessageLookupByLibrary.simpleMessage(
+            "========================================================"),
+        "error": MessageLookupByLibrary.simpleMessage("Error"),
         "error_internal_server":
             MessageLookupByLibrary.simpleMessage("Internal server error"),
         "error_unexpected":
             MessageLookupByLibrary.simpleMessage("Unexpected Error happened"),
-        "exploreFarms": MessageLookupByLibrary.simpleMessage("Explore Farms"),
-        "farmers": MessageLookupByLibrary.simpleMessage("Farmers"),
-        "language": MessageLookupByLibrary.simpleMessage("language"),
-        "languages": MessageLookupByLibrary.simpleMessage("languages"),
-        "latestTasks": MessageLookupByLibrary.simpleMessage("Latest Tasks"),
-        "myFarms": MessageLookupByLibrary.simpleMessage("My Farms"),
-        "participate": MessageLookupByLibrary.simpleMessage("Participate"),
-        "qrDialogTxt": MessageLookupByLibrary.simpleMessage("Scan to Login"),
-        "selectPassportToContinue": MessageLookupByLibrary.simpleMessage(
-            "Select passport to continue."),
+        "language": MessageLookupByLibrary.simpleMessage("Language"),
+        "languages": MessageLookupByLibrary.simpleMessage("Languages"),
+        "links": MessageLookupByLibrary.simpleMessage("Links"),
+        "processing": MessageLookupByLibrary.simpleMessage("Processing"),
+        "reset": MessageLookupByLibrary.simpleMessage("Reset"),
+        "size": MessageLookupByLibrary.simpleMessage("Size"),
         "something_went_wrong_check_connection":
             MessageLookupByLibrary.simpleMessage(
                 "Something went wrong, please check your internet connection and try again"),
-        "squeezeIntoVIMP":
-            MessageLookupByLibrary.simpleMessage("Squeeze into VIMP"),
+        "start": MessageLookupByLibrary.simpleMessage("Start"),
+        "start_error_strings": MessageLookupByLibrary.simpleMessage(
+            "=============== Start Error Strings =================="),
         "tapAgainToExit":
             MessageLookupByLibrary.simpleMessage("Tap again to exit!"),
-        "tasks": MessageLookupByLibrary.simpleMessage("Tasks"),
         "un_authorized_error":
             MessageLookupByLibrary.simpleMessage("Unauthorized Error"),
-        "unknown_error": MessageLookupByLibrary.simpleMessage("unKnown error"),
+        "unknownSize": MessageLookupByLibrary.simpleMessage("Unknown Size"),
+        "unknown_error": MessageLookupByLibrary.simpleMessage("UnKnown error"),
         "user_cancel_error":
             MessageLookupByLibrary.simpleMessage("Canceled by the user")
       };

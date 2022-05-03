@@ -2,9 +2,10 @@ import '../../managers/managers.dart';
 
 abstract class BaseError {
   final String? message;
-  const BaseError(this.message);
+  final String? statusCode;
+  const BaseError({this.message,this.statusCode});
 }
 
 class CustomError extends BaseError {
-  CustomError({String? message}) : super(message ?? translate.error_unexpected);
+  CustomError({String? message}) : super(message:message ?? translate.error_unexpected);
 }
