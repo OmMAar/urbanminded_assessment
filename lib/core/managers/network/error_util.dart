@@ -32,16 +32,17 @@ class ErrorUtil {
   }
 
   static BaseError _handleDioResponseError(int? statusCode, dynamic error) {
+    /// if you want to do something depend on the status code
     switch (statusCode) {
       case 400:
-        return BadRequestDioError(message: error['message'], statusCode: "400");
+        return BadRequestDioError(message: error['message'], statusCode: statusCode.toString());
       case 404:
-        return NotFoundDioError(message: error['message'], statusCode: "404");
+        return NotFoundDioError(message: error['message'], statusCode: statusCode.toString());
       case 500:
-        return InternalServerError(statusCode: "500");
+        return InternalServerError(statusCode: statusCode.toString());
       default:
         return UnexpectedError(
-            message: error['message'] ?? translate.error_unexpected);
+            message: translate.error_unexpected,statusCode: statusCode.toString());
     }
   }
 }
