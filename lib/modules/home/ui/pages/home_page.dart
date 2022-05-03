@@ -29,24 +29,27 @@ class _HomePageState extends State<HomePage> {
   late List<SiteModel> _sites;
 
 
-  initList(){
+  initDefaultList(){
     _sites = [
       SiteModel(
         id: "1",
-        url: "https://www.test.com",
+        url: "https://www.apple.com",
       ),
       SiteModel(
         id: "2",
         url: "https://www.google.com",
       ),
-      SiteModel(id: "3", url: "https://www.microsoft.com"),
+      SiteModel(id: "3", url: "https://www.micrososft.com"),
+      SiteModel(id: "4", url: "https://www.tesla.com"),
+      SiteModel(id: "5", url: "https://www.uber.com"),
+      SiteModel(id: "6", url: "https://www.yahoo.com"),
     ];
   }
 
   @override
   void initState() {
     super.initState();
-    initList();
+    initDefaultList();
     _btnText = translate.start.toUpperCase();
     _homeBloc = HomeBloc();
     _disableBtn = false;
